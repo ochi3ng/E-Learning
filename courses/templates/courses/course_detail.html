@@ -1,0 +1,7 @@
+<h1>{{ course.title }}</h1>
+<p>{{ course.description }}</p>
+{% for lesson in course.lessons.all %}
+<h3>{{ lesson.title }}</h3>
+<p>{{ lesson.content }}</p>
+<a href="{{ lesson.video_url }}" target="_blank">Watch Video</a>
+{% endfor %}

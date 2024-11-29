@@ -9,7 +9,9 @@
     <h1>Courses List</h1>
     <ul>
         {% for course in courses %}
-        <li>{{ course.title }} - {{ course.description }}</li>
+        <h2>{{ course.title }}</h2> 
+        <p>{{ course.description }}</p>
+        <a href="{{ course.id }}/">View Details</a>
         {% endfor %}
     </ul>
 </body>
